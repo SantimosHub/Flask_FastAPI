@@ -37,6 +37,7 @@ async def async_download_data(url, filename):
                 f.write(pict)
 
 
+
 if __name__ == '__main__':
 
     start_time = time.time()
