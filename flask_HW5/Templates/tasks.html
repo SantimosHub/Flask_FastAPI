@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task board</title>
+</head>
+<body>
+    {% if tasks_list %}
+    <h1>Список задач</h1>
+        {{ tasks_list | safe }}
+    {% else %}
+        <h2>Ваша задача</h2>
+        {{ task | safe }}
+    {% endif %}
+</body>
+</html>
